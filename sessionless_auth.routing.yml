@@ -1,0 +1,2 @@
+route_callbacks:
+  - 'plugin.manager.sessionless_auth:getRoutesOfPlugins'

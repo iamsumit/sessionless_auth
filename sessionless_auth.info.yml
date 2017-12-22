@@ -1,0 +1,4 @@
+name: Session Less Auth
+type: module
+description: 'Provide secured authentication if users are external and not in drupal database.'
+core: 8.x

@@ -1,0 +1,7 @@
+services:
+  plugin.manager.sessionless_auth:
+    class: Drupal\sessionless_auth\SessionLessAuthPluginManager
+    parent: default_plugin_manager
+  sessionless_auth.session_manager:
+      class: Drupal\sessionless_auth\SessionLessAuthSessionManager
+      arguments: ['@session']
