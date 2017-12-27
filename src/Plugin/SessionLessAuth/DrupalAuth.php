@@ -42,9 +42,11 @@ class DrupalAuth extends SessionLessAuthBase {
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
+    // Authenticate credentials here and return the data to store in cookie.
     return [
       'name' => 'test',
       'email' => 'test@testing.com',
+      'uid' => 12132132
     ];
   }
 
